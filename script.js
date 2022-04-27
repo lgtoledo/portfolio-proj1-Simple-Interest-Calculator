@@ -5,6 +5,8 @@ function compute() {
   var years = document.getElementById("years").value;
   var interest = (principal * rate * years) / 100;
   var year = new Date().getFullYear() + parseInt(year);
+  year = year.toString();
+  console.log(new Date().getFullYear().toString());
 
   var result = document.getElementById("result");
   result.innerHTML =
@@ -21,7 +23,8 @@ function compute() {
     ".";
 
   if (principal <= 0) {
-    result.innerHTML = "Please enter a positive number";
+    alert("Please enter a positive number");
+    principal.focus();
   }
 }
 
