@@ -1,4 +1,5 @@
 function compute() {
+  console.log("ejecutando compute()");
   var principal = document.getElementById("principal").value;
   var rate = document.getElementById("rate").value;
   var years = document.getElementById("years").value;
@@ -21,6 +22,7 @@ function compute() {
 }
 
 function updateRate() {
+  console.log("ejecutando updateRate()");
   var rateval = document.getElementById("rate").value;
   document.getElementById("rate_value").innerText = rateval;
 }
