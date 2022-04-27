@@ -19,6 +19,10 @@ function compute() {
     " in " +
     year +
     ".";
+
+  if (principal <= 0) {
+    result.innerHTML = "Please enter a positive number";
+  }
 }
 
 function updateRate() {
